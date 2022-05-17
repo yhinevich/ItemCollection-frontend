@@ -1,0 +1,123 @@
+body {
+
+  background: url("https://i.ibb.co/YcwTZJv/mount.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: motionBlur();
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  .user-bar-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.status {
+  &-online {
+    color: rgb(10, 150, 100);
+  }
+  &-offline {
+    color: rgb(200, 100, 100);
+  }
+  &-blocked{
+    color: rgb(200, 100, 100);
+  }
+  &-not-blocked{
+    color: rgb(10, 150, 100);
+  }
+}
+.comment_author{
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.comment_context{
+  margin-left: 25px;
+  font-weight: lighter;
+
+
+}
+
+.comment_div{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-image: linear-gradient(to right, white, pink);
+  background-size: cover;
+  border-radius: 10px;
+  height: 100px;
+  width: 1300px;
+}
+
+.comment_button{
+  width: 100px;
+  height: 40px;
+}
+
+.coll_btn{
+  background-image: linear-gradient(to right, white, pink);
+  margin-right: 20px;
+  position: relative;
+  left: 50%;
+}
+.form{
+  width: 400px;
+  background-image: linear-gradient(to right, white, pink);
+  box-shadow: 3px 3px 3px;
+}
+
+.form-desc{
+  width: 400px;
+  height: 100px;
+  background-image: linear-gradient(to right, white, pink);
+  box-shadow: 3px 3px 3px;
+}
+
+.center-all{
+  margin-top: 10px;
+}
+
+.sign{
+  margin-top: 100px;
+}
+
+.logout-btn {
+  color: white;
+  background-color: brown;
+  margin-left: 20px;
+}
+
+.color-nav{
+  color: white;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px black;
+}
+
+
+.color-title{
+  text-shadow: 3px 3px 3px black;
+  color: white;
+  font-size: 40px;
+}
+
+
+@media screen and(min-width: 992px) {
+  .user-bar-container {
+    position: absolute;
+    right: 0;
+  }
+  .container {
+    position: relative;
+  }
+}
+@media screen and(max-width: 767px) {
+  td,
+  th {
+    font-size: 14px;
+  }
+}

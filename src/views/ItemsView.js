@@ -54,7 +54,7 @@ function ItemView() {
                 collection_name: coll_name
             }
                 //console.log(JSON.stringify(body))
-            console.log(sendJSON(config.server_host_name + "/item-collection", body))
+            console.log(sendJSON(config.server_host_name + "/app/item-collection", body))
         }
         // dispatch(itemOperations.listItems(ids));
         //
